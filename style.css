@@ -17,11 +17,12 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     position: relative; }
   .container-manager .content-between {
     justify-content: space-between; }
+  .container-manager .align-center {
+    align-items: center; }
   .container-manager .content-end {
     justify-content: flex-end; }
   .container-manager .name {
@@ -54,5 +55,37 @@ body {
     .container-manager .img-p2:hover {
       height: 400px;
       transition: 0.5s; }
+  .container-manager .link {
+    height: 150px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 3rem;
+    top: calc(50% - 85px);
+    box-shadow: 7px 7px 10px #222; }
+    .container-manager .link .link-bg1 {
+      min-height: 70px;
+      background-image: url("./image/banner1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .container-manager .link .wrapper {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px; }
+    .container-manager .link .link-bg2 {
+      margin-top: 10px;
+      min-height: 70px;
+      background-image: url("./image/banner2.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .container-manager .link .link-title {
+      font-size: 11px; }
+    .container-manager .link .link-sub-title {
+      font-size: 9px; }
+  .container-manager .ml-4 {
+    margin-left: 4rem; }
 
 /*# sourceMappingURL=style.css.map */
