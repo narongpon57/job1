@@ -97,16 +97,16 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 7px 7px 10px #222;
-
+  
     .wrapper {
       display: block;
       color: white;
-      text-decoration: none;
       padding: 10px;
     }
 
     .link-bg1 {
       min-height: 120px;
+      text-decoration: none;
       background-image: url('./image/banner1.png');
       background-position: center;
       background-repeat: no-repeat;
@@ -116,6 +116,7 @@ body {
     .link-bg2 {
       min-height: 120px;
       margin-top: 20px;
+      text-decoration: none;
       background-image: url('./image/banner2.png');
       background-position: center;
       background-repeat: no-repeat;
@@ -179,14 +180,20 @@ body {
       position: absolute;
       right: 3rem;
       top: calc(50% - 85px);
+
+      .wrapper {
+        padding: 8px;
+      }
       
       .link-bg1 {
+        display: block;
         min-height: 70px;
         margin-left: 0;
         margin-right: 0;
       }
 
       .link-bg2 {
+        display: block;
         margin-top: 10px;
         margin-left: 0;
         margin-right: 0;
