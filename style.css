@@ -9,15 +9,17 @@ body {
 .container-manager {
   background-color: #0a314e;
   color: white;
-  height: 450px;
-  display: flex; }
+  padding-bottom: 20px; }
+  .container-manager .container {
+    height: 450px;
+    display: flex; }
   .container-manager .information {
     z-index: 999; }
   .container-manager .col {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 1rem;
     position: relative; }
   .container-manager .content-between {
     justify-content: space-between; }
@@ -31,10 +33,9 @@ body {
   .container-manager .text-right {
     text-align: right; }
   .container-manager .title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    z-index: 1;
-    margin-left: 3rem; }
+    z-index: 1; }
   .container-manager .img-p1 {
     position: absolute;
     height: 400px;
@@ -55,37 +56,84 @@ body {
     .container-manager .img-p2:hover {
       height: 400px;
       transition: 0.5s; }
+  .container-manager .ml-4 {
+    margin-left: 4rem; }
   .container-manager .link {
-    height: 150px;
     background-color: white;
-    padding: 10px;
-    position: absolute;
-    right: 3rem;
-    top: calc(50% - 85px);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
     box-shadow: 7px 7px 10px #222; }
-    .container-manager .link .link-bg1 {
-      min-height: 70px;
-      background-image: url("./image/banner1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
     .container-manager .link .wrapper {
       display: block;
       color: white;
       text-decoration: none;
       padding: 10px; }
+    .container-manager .link .link-bg1 {
+      min-height: 120px;
+      background-image: url("./image/banner1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
     .container-manager .link .link-bg2 {
-      margin-top: 10px;
-      min-height: 70px;
+      min-height: 120px;
+      margin-top: 20px;
       background-image: url("./image/banner2.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
-    .container-manager .link .link-title {
-      font-size: 11px; }
-    .container-manager .link .link-sub-title {
-      font-size: 9px; }
-  .container-manager .ml-4 {
-    margin-left: 4rem; }
+  .container-manager .col-md {
+    width: 100%; }
+  @media (min-width: 576px) {
+    .container-manager .col-md {
+      width: 50%; }
+    .container-manager .link {
+      flex-direction: row; }
+      .container-manager .link .link-bg1 {
+        margin-right: 10px; }
+      .container-manager .link .link-bg2 {
+        margin-left: 10px;
+        margin-top: 0; } }
+  @media (min-width: 768px) {
+    .container-manager .title {
+      font-size: 2.5rem;
+      margin-left: 3rem; }
+    .container-manager .col {
+      padding: 2rem 2rem 3rem 2rem; }
+    .container-manager .link .wrapper {
+      padding: 20px; } }
+  @media (min-width: 1080px) {
+    .container-manager {
+      padding-bottom: 0; }
+      .container-manager .show-lg {
+        display: block; }
+      .container-manager .hide-lg {
+        display: none; }
+      .container-manager .link {
+        height: 150px;
+        padding: 10px;
+        position: absolute;
+        right: 3rem;
+        top: calc(50% - 85px); }
+        .container-manager .link .link-bg1 {
+          min-height: 70px;
+          margin-left: 0;
+          margin-right: 0; }
+        .container-manager .link .link-bg2 {
+          margin-top: 10px;
+          margin-left: 0;
+          margin-right: 0;
+          min-height: 70px; }
+        .container-manager .link .link-title {
+          font-size: 11px; }
+        .container-manager .link .link-sub-title {
+          font-size: 9px; } }
+  @media (max-width: 1079px) {
+    .container-manager .show-lg {
+      display: none; }
+    .container-manager .hide-lg {
+      display: flex; } }
 
 /*# sourceMappingURL=style.css.map */
